@@ -11,7 +11,7 @@ CORS(app)  # Allow frontend to communicate with backend
 SMTP_SERVER = "smtp.mail.me.com"
 SMTP_PORT = 465
 EMAIL_ADDRESS = "silvia.miron@icloud.com"  # Your iCloud email
-EMAIL_PASSWORD = "grtqzordfbfmbjiz"  # App-Specific Password from Apple
+EMAIL_PASSWORD = "grtqzordfz"  # App-Specific Password from Apple
 
 
 @app.route("/send-email", methods=["POST"])
