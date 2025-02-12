@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Silvia's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="heart-5-xxl.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="polaroid-container">
+    <div class="polaroid">
+        <img src="IMG_7500.jpg" alt="Your Caption Here">
+        <div class="caption">"The computer was born to solve problems that did not exist before." 
+          <br> - Bill Gates</div>
+    </div>
+</div>
+  
+  <section id="home">
+    <div class="typewriter">
+      <h1>Hi, I'm Silvia</h1>  
+    </div>
+  </section>
+
+  <!-- Social Icons Section -->
+<div class="social-icons">
+  <a href="https://github.com/SilviaMiron" target="_blank" class="icon github">
+      <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.instagram.com/silvia_norim/" target="_blank" class="icon instagram">
+      <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/silvia-miron-b3a381347/" target="_blank" class="icon linkedin">
+    <i class="fab fa-linkedin"></i>
+</a>
+</div>
+
+  <section class="hover-zoom">
+  <section id="about">
+    <div class="section-container">
+      <h2>About Me</h2>
+      <p>
+        A few months ago, I decided to take a big leap—switching from my role as an administrative assistant to following my passion for technology. Becoming a mom made me realize I wanted a career that would challenge me, keep me learning, and offer flexibility. So, I took the plunge and completed a 12-week software development bootcamp, where I learned to build dynamic, user-friendly applications.
+
+I'm a highly motivated and curious person who loves problem-solving and continuous learning. I also speak four languages—English, Italian, Romanian, and Albanian—which has given me a deep appreciation for different cultures and perspectives. When I’m not coding, you’ll probably find me reading or working on my first book!
+
+Now, I’m excited to start my journey in tech, eager to grow as a developer, collaborate with others, and keep expanding my skills. I can’t wait to see where this path takes me!
+    </div>
+  </section>
+</section> 
+
+<section class="hover-zoom">
+  <section id="skills">
+    <div class="section-container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>GitHub</li>
+        <li>Database Management</li>
+      </ul>
+    </div>
+  </section>
+</section>
+
+<section class="hover-zoom">
+  <section id="projects">
+    <div class="section-container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="project">
+          <h3>Business Website</h3>
+          <p>A clean and responsive professional website built with HTML, CSS, and JavaScript.</p>
+          <a href="https://hanahomeimprovements.com" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Daily Motivational Quote</h3>
+          <p>
+            A JavaScript app that displays a random motivational quote every day. Includes a feature to copy quotes or share them on Instagram.
+          </p>
+          <a href="https://silviamiron.github.io/Motivational-Quotes-Generator/" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Book Tracker</h3>
+          <p>A web app to keep track of your reading progress, built with JavaScript.</p>
+          <a href="https://silviamiron.github.io/Book-Tracker/" class="btn">View Project</a>
+        </div>
+        <div class="project">
+          <h3>To-Do List</h3>
+          <p>
+            A simple to-do list app built with HTML, CSS, and JavaScript. Users can add tasks, mark them as completed, and get a prompt when all tasks are done.
+          </p>
+          <a href="https://silviamiron.github.io/To-Do-List-/" class="btn">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Studio Bookings system</h3>
+            <p>
+              A simple database, with clients, courses and bookings created in Mysql.
+            </p>
+            <a href="https://github.com/SilviaMiron/Pt-Bookings-db" class="btn">View Project</a>
+          </div>
+          <div class="project">
+            <h3>Random Password Generator</h3>
+            <p>A simple, aesthetic, user-friendly, password generator created with Python.</p>
+            <a href="https://silviamiron.github.io/Password-Generator/" class="btn">View Project</a>
+          </div>
+      </div>
+    </div>
+  </section>
+</section>
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="responseMessage"></p> <!-- To show success/error messages -->
+    <div class="center-link-container">
+      <a href="silvia cv.pdf" class="btn" download>Download My CV</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Silvia Miron. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

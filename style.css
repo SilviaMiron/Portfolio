@@ -1,0 +1,375 @@
+/* Centered container for the polaroid */
+.polaroid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Polaroid styling */
+.polaroid {
+  background: white;
+  padding: 10px;
+  border: 2px solid #ddd;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transform: rotate(-4deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* On hover, tilt slightly  */
+.polaroid:hover {
+  transform: rotate(0);
+}
+
+/* Styling the image inside the polaroid */
+.polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 8px;
+}
+
+/* Caption styling */
+.caption {
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style:normal;
+  font-size: 1rem;
+  color: #555;
+  padding: 5px 0;
+}
+.typewriter {
+  display: flex;
+  justify-content: center; /* Horizontally centers the text */
+  align-items: center; /* Vertically centers the text */
+  text-align: center; /* Centers text alignment */
+}
+.typewriter h1 {
+    font-size: 60px;
+    font-family: "Caveat", serif;
+    overflow: hidden;
+    /* content is not revealed until the animation */
+    border-right: none;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* content on a single line */
+    margin: 0 auto;
+    /* scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation-iteration-count: infinite; 
+  }
+
+  /* The typing effect */
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+      width: 100%
+    }
+  }
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 40px;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.icon.github:hover {
+    color: #E4405F;
+    transform: scale(1.2);
+}
+
+.icon.instagram:hover {
+    color: #E4405F;
+    transform: scale(1.2);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+.center-link-container {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+  }
+  
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('marble.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency */
+    background-blend-mode: lighten;  
+}
+
+  
+  
+header {
+    background-color: #f4ece7; 
+    padding: 1em 0;
+  }
+  
+nav ul {
+    display: flex; 
+    justify-content: center; 
+    gap: 6em; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+nav ul li {
+    margin: 0; 
+  }
+  
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: bold;
+    font-size: 1.5em; 
+    transition: color 0.3s ease; 
+  }
+  
+nav ul li a:hover {
+    color: #000; 
+  }
+  
+  @media (max-width: 1024px) {
+    nav ul {
+      gap: 3em; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      gap: 2em; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul {
+      gap: 1em; 
+    }
+  
+    nav ul li a {
+      font-size: 1em; 
+    }
+  }
+  
+  h2 {
+      text-align: center; 
+    }
+  
+    
+  
+.btn {
+    display: center;
+    padding: 0.5em 1em;
+    color: white;
+    background-color: #b59393; 
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    justify-content: center;
+  }
+  
+  .btn:hover {
+    background-color: #926f6f; 
+  }
+
+  .hover-zoom:hover {
+    transform: scale(1.02); 
+    transition: transform 0.5s ease;/* Slight zoom effect */
+  }
+
+section {
+  padding: 2em 1em;
+  }
+
+/* Section Container */
+.section-container {
+  background-color: #ffffff; 
+  border-radius: 20px; 
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 2em; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; 
+  transition: all 0.3s ease; 
+}
+
+/* Text Styling */
+.section-container h2 {
+  font-size: 2em;
+  color: #333333;
+  margin-bottom: 1em;
+}
+
+.section-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555555;
+  text-align: justify;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+/* Projects Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5em;
+}
+
+.project {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 1.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.project p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.project .btn {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #b59393; 
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.project .btn:hover {
+  background-color: #926f6f; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-container {
+    padding: 1.5em;
+    border-radius: 15px;
+  }
+
+  .grid {
+    gap: 1em;
+  }
+
+  .project {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 1em;
+    border-radius: 10px;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+
+  .project h3 {
+    font-size: 1.3em;
+  }
+
+  .project p {
+    font-size: 0.9em;
+  }
+}
+
+/* Contact form design */ 
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+  }
+  
+  form button {
+    background-color: #b59393;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center; 
+  }
+.center-link-container {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 20vh; /* Full viewport height */
+  }
+  
+a.btn {
+    display: inline-block;
+    padding: 12px 20px; /* Button-like padding */
+    background-color: #b59393; /* Blue background */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+a.btn:hover {
+    background-color: #926f6f; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+  }
+
+  /* Footer design */
+footer {
+    background-color: #f4ece7;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
