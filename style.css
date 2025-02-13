@@ -97,6 +97,10 @@
     color: #E4405F;
     transform: scale(1.2);
 }
+.icon.linkedin:hover {
+  color: #E4405F;
+  transform: scale(1.2);
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
